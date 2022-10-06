@@ -21,13 +21,14 @@ module.exports = {
     /** @param {RuleContext} context */
     create(context) {
         return {
+            /** @param {Program} program */
             Program(program) {
-                var element = program.templateBody;
-                if (element === null) {
+                const element = program.templateBody;
+                if (element == null) {
                     return;
                 }
 
-                var hasSrc = utils.hasAttribute(element, 'src');
+                const hasSrc = utils.hasAttribute(element, 'src');
 
                 if (hasSrc) {
                     context.report({
