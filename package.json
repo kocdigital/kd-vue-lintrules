@@ -1,6 +1,6 @@
 {
     "name": "@kocdigital/eslint-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "KocDigital's base TypeScript ESLint config",
     "main": "index.js",
     "scripts": {
@@ -44,7 +44,7 @@
         "vue-eslint-parser": "^9.1.0"
     },
     "peerDependencies": {
-        "eslint": "^8.2.0",
+        "eslint": "^8.24.0",
         "typescript": "~4.1.5"
     },
     "engines": {
