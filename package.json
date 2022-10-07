@@ -1,6 +1,6 @@
 {
     "name": "@kocdigital/eslint-plugin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "KocDigital's base TypeScript ESLint config",
     "main": "index.js",
     "scripts": {

@@ -73,7 +73,6 @@ module.exports = {
         // Require or disallow use of semicolons instead of ASI
         // https://eslint.org/docs/latest/rules/semi
         semi: ['error', 'always'],
-
         // Enforce spacing before and after semicolons
         // https://eslint.org/docs/latest/rules/semi-spacing
         'semi-spacing': ['error', { before: false, after: true }],
@@ -97,6 +96,33 @@ module.exports = {
         // Require newline before return
         // https://eslint.org/docs/latest/rules/newline-before-return
         'newline-before-return': 'error',
+
+        // Require parens in arrow functions
+        // https://eslint.org/docs/latest/rules/arrow-parens
+        'arrow-parens': ['error', 'always'],
+
+        // Prefer templates when joining strings
+        // https://eslint.org/docs/latest/rules/prefer-template
+        'prefer-template': 'error',
+
+        // https://eslint.org/docs/latest/rules/
+        'import/order': ['error', {
+            pathGroups: [
+                {
+                    pattern: '@/**',
+                    group: 'external',
+                    position: 'after',
+                },
+            ],
+        }],
+
+        // https://eslint.org/docs/latest/rules/function-paren-newline
+        'function-paren-newline': ['error', {
+            minItems: 3,
+        }],
+
+        // https://eslint.org/docs/latest/rules/function-call-argument-newline
+        'function-call-argument-newline': ['error', 'consistent'],
 
         // https://eslint.org/docs/latest/rules/
     },
